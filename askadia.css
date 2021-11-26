@@ -149,3 +149,59 @@ transform: rotate(90deg);
     color: var(--color-first);
     box-shadow: none;
   }
+.contact .info{
+    width:100%;
+}
+.contact .info i{
+    font-size: 20px;
+    color: black;
+    float: left;
+    width:44px;
+    height:44px;
+    background: #E8E6DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.contact .info h4{
+    padding: 0 0 0 60px;
+    font-size:18px;
+    font-weight: 500;
+    margin-bottom:5px;
+}
+.contact .info p{
+    padding: 0 0 0 60px;
+    margin-bottom:0;
+    font-size: 14px;
+    color:#000;
+}
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone{
+    margin-top: 40px;
+}
+.contact button{
+    background: #E8E6DF;
+    border: 2px solid #000;
+    padding:10px 35px;
+    color:#000;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+.contact button:hover{
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.sub-footer{
+    margin-top: 30px;
+     background: #148DDF;
+     border-top: 1px solid #000;
+     padding: 30px 0 10px;
+}
+footer .sub-footer p{
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
