@@ -131,22 +131,22 @@ transform: rotate(90deg);
     display: inline-block;
     width: auto;
     padding: 12px 30px;
-    font-size: var(--text-regular);
-    font-weight: var(--font-weight-regular);
-    background-color: var(--color-first);
-    color: var(--color-white);
+    font-size: regular;
+    font-weight: regular;
+    background-color: #8E9AAF;
+    color: white;
     letter-spacing: 1.1px;
-    box-shadow: 0px 15px 40px rgba(102, 145, 53, 0.4);
+    box-shadow: 0px 15px 40px rgba(44, 37, 51, 0.4);
     border-radius: 50px;
     text-align: center;
     text-transform: capitalize;
-    border: 1px solid var(--color-first);
+    border: 1px solid #8E9AAF;
     cursor: pointer;
-    transition: var(--animate);
+    transition: 0.3s;
   }
   .btn:hover {
     background-color: transparent;
-    color: var(--color-first);
+    color: #8E9AAF;
     box-shadow: none;
   }
 .contact .info{
