@@ -1,116 +1,240 @@
-.navbar-brand {
-    background-color: #148DDF;
-    color: white;
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+#topbar {
+    padding: 15px 0;
     text-transform: uppercase;
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 1.2;
-    margin-bottom: 30px;
-}
-
-.navbar-brand span {
-    color: #000;
-}
-
-.navbar-brand small {
-    display: block;
-    font-size: 13px;
-    font-weight: normal;
-    color: rgba(0, 0, 0, 0.3);
-    letter-spacing: 3px;
-}
-
-.social-media .call-icon {
-    position: absolute;
-    width: 40px;
-    height: 178px;
-    left: 198px;
-    top: 5px;
-    z-index: 1;
-    background: #495867;
-    border-radius: 0px 0px 35px 35px;
-}
-
-.social-media .call-icon #call-title {
-    position: absolute;
-    width: 97px;
-    height: 24px;
-    left: 0;
-    right: 0;
-    top: 70px;
-    margin: 0;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 14px;
-    display: flex;
-    align-items: center;
     text-align: center;
-    justify-content: center;
-    color: #000000;
-    transform: rotate(90deg);
+    font-weight: 700;
 }
 
-.main-navbar-light .navbar-nav .nav-item .nav-link {
-    font-size: 15px;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    font-weight: 500;
-    color: #000;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    position: relative;
-    opacity: 1!important;
+#topbar * {
+    margin: 0;
 }
 
-.main-navbar-light .navbar-nav .nav-item .nav-link:before {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: block;
-    width: 0;
-    height: 2px;
-    background: wheat;
-    transition: all 0.3s ease;
+#topbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid;
 }
 
-.main-navbar-light .navbar-nav .nav-item .nav-link:hover {
-    color: white;
-}
-
-.main-navbar-light .navbar-nav .nav-item .nav-link:hover:before {
-    width: 100%;
-}
-
-.main-navbar-light .navbar-nav .nav-item.active a {
-    color: #4E4C67;
-}
-
-.main-navbar-light .navbar-toggler {
-    border: none;
-    color: #4E4C67!important;
-    cursor: pointer;
+#topbar ul li:last-child {
+    margin-right: 0;
     padding-right: 0;
-    text-transform: uppercase;
-    font-size: 16px;
-    letter-spacing: .1em;
+    border-right: none;
 }
 
-.main-navbar-light .navbar-toggler:focus {
-    outline: none!important;
+#topbar i {
+    line-height: normal;
 }
 
-#image {
-    width: 5%;
-    position: relative;
-    left: 70px;
+#header {
+    padding: 25px 0;
 }
 
-.sec2 {
+#header section {
     display: flex;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#header section>div {
+    display: table-cell;
+    width: 33.33333333333333%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#header section>div * {
+    margin: 0;
+}
+
+#header section>div:nth-child(2) {
+    text-align: center;
+}
+
+#header #logo {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+#header #logo img {
+    width: 10%;
+    height: 20%;
+    display: inline-block;
+}
+
+#header .address p {
+    text-align: center;
+    display: absolute;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    left: 45px;
+}
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainav,
+.sidebar nav {
+    line-height: normal;
+}
+
+#mainav ul {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 50px 0 0;
+    padding: 0;
+    font-size: 16px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+#mainav li a {
+    display: block;
+    padding: 20px 0;
+}
+
+#mainav form {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#topbar ul li {
+    border-color: rgba(255, 255, 255, .4);
+}
+
+#topbar ul li a {
+    color: #3A2E39;
+}
+
+#topbar li:first-child a,
+#topbar a:hover {
+    color: #3A2E39;
+}
+
+#header #logo a {
+    color: inherit;
+}
+
+#mainav li a {
+    color: inherit;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover>a {
+    color: #6e5757;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width:978px) {
+    .hoc {
+        max-width: 90%;
+    }
+    #header {
+        padding: 30px 0;
+    }
+    #header #logo {
+        margin-top: 3px;
+    }
+    #mainav {
+        padding: 15px;
+    }
+    #mainav ul {
+        display: block;
+    }
+    #mainav form {
+        display: block;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #header {
+        text-align: center;
+    }
+    #header section>div form {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+    #header section>div form input {
+        float: none;
+    }
+    #header #logo {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #header section,
+    #header section>div {
+        display: block;
+        width: 100%;
+    }
+    #header section>div {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #header section>div:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+
+*,
+*::before,
+*::after {
+    transition: all .3s ease-in-out;
+}
+
+a {
+    color: #FD8866;
+}
+
+a:active,
+a:focus {
+    background: transparent;
+}
+
+#mainav form * {
+    transition: none !important;
 }
 
 .column {
