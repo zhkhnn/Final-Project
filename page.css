@@ -1,0 +1,465 @@
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+#topbar {
+    padding: 15px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+}
+
+#topbar * {
+    margin: 0;
+}
+
+#topbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid;
+}
+
+#topbar ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+#topbar i {
+    line-height: normal;
+}
+
+#header {
+    padding: 25px 0;
+}
+
+#header section {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    line-height: 1.6em;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#header section>div {
+    display: table-cell;
+    width: 33.33333333333333%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#header section>div * {
+    margin: 0;
+}
+
+#header section>div:nth-child(2) {
+    text-align: center;
+}
+
+#header #logo {
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+#header #logo img {
+    width: 10%;
+    height: 20%;
+    display: inline-block;
+}
+
+#header .address p {
+    text-align: center;
+    display: absolute;
+    padding: 0;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    left: 45px;
+}
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#mainav,
+.sidebar nav {
+    line-height: normal;
+}
+
+#mainav ul {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mainav li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    margin: 0 50px 0 0;
+    padding: 0;
+    font-size: 16px;
+    padding-top: 30px;
+    justify-content: center;
+}
+
+#mainav li a {
+    display: block;
+    padding: 20px 0;
+}
+
+#mainav form {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+#topbar ul li {
+    border-color: rgba(255, 255, 255, .4);
+}
+
+#topbar ul li a {
+    color: #3A2E39;
+}
+
+#topbar li:first-child a,
+#topbar a:hover {
+    color: #3A2E39;
+}
+
+#header #logo a {
+    color: inherit;
+}
+
+#mainav li a {
+    color: inherit;
+}
+
+#mainav .active a,
+#mainav a:hover,
+#mainav li:hover>a {
+    color: #6e5757;
+    background-color: inherit;
+    text-decoration: none;
+}
+
+@media screen and (max-width:978px) {
+    .hoc {
+        max-width: 90%;
+    }
+    #header {
+        padding: 30px 0;
+    }
+    #header #logo {
+        margin-top: 3px;
+    }
+    #mainav {
+        padding: 15px;
+    }
+    #mainav ul {
+        display: block;
+    }
+    #mainav form {
+        display: block;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #header {
+        text-align: center;
+    }
+    #header section>div form {
+        width: 100%;
+        max-width: 300px;
+        float: none;
+        margin: 0 auto;
+    }
+    #header section>div form input {
+        float: none;
+    }
+    #header #logo {
+        margin: 0 0 15px 0;
+    }
+}
+
+@media screen and (max-width:650px) {
+    #header section,
+    #header section>div {
+        display: block;
+        width: 100%;
+    }
+    #header section>div {
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    #header section>div:nth-child(3) {
+        margin-bottom: 0;
+    }
+}
+
+*,
+*::before,
+*::after {
+    transition: all .3s ease-in-out;
+}
+
+a {
+    color: #FD8866;
+}
+
+a:active,
+a:focus {
+    background: transparent;
+}
+
+#mainav form * {
+    transition: none !important;
+}
+
+.inner_container {
+    padding: 50px 280px 50px 50px;
+}
+
+.inner_container h2 {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.booknow p {
+    font-size: 22px;
+    line-height: 26px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.booknow {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* Full-width input fields */
+
+.booknow input[name=email],
+input[name=psw] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+/* Add a background color when the inputs get focus */
+
+.booknow input[name=email]:focus,
+input[name=psw]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+/* Set a style for all buttons */
+
+.booknow button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 120px;
+    margin: auto;
+    margin-top: 60px;
+    justify-content: center;
+    text-align: center;
+    left: 240px;
+    right: 120px;
+    display: flex;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.booknow button:hover {
+    opacity: 1;
+}
+
+
+/* Extra styles for the cancel button */
+
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: #f44336;
+}
+
+
+/* Float cancel and signup buttons and add an equal width */
+
+.cancelbtn,
+.signupbtn {
+    float: left;
+    width: 50%;
+}
+
+
+/* Add padding to container elements */
+
+.container {
+    padding: 16px;
+}
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: #474e5d;
+    padding-top: 50px;
+}
+
+
+/* Modal Content/Box */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+
+/* Style the horizontal ruler */
+
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+
+/* The Close Button (x) */
+
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+
+/* Clear floats */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.contact .info {
+    width: 100%;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: black;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #E8E6DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone {
+    margin-top: 25px;
+}
+
+.contact button {
+    background: #E8E6DF;
+    border: 2px solid #000;
+    padding: 10px 35px;
+    color: #000;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact button:hover {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.sub-footer {
+    margin-top: 30px;
+    background: #148DDF;
+    border-top: 1px solid #000;
+    padding: 30px 0 10px;
+}
+
+footer .sub-footer p {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
