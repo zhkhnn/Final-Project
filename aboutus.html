@@ -8,79 +8,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link rel="stylesheet" href="aboutus.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"/>
+     <script
+      src="https://kit.fontawesome.com/d752769066.js"
+      crossorigin="anonymous"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap"
+      rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
+<script>
+    (function(d, w, q) {
+        w.QCHAT_ID = "AFMMTiH2B1e73R-RCVzkw";
+        w[q] =
+            w[q] ||
+            function() {
+                (w[q].q = w[q].q || []).push(arguments);
+            };
+        var l = function() {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://quickley.chat/chat.js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        };
+        if (w.attachEvent) {
+            w.attachEvent("onload", l);
+        } else {
+            w.addEventListener("load", l, false);
+        }
+    })(document, window, "Quickley");
+</script>
+<!-- /Quickley.Chat -->
+
 <body>
     <div class="wrapper row0" style="background-color: #f7f0f5">
         <div id="topbar" class="hoc clear">
-            <ul class="nospace">
-                <li>
-                    <a href="index.html" title="Home"><i class="fa fa-android"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Send a Mail"><i class="fa fa-apple"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Help Centre"><i class="fa fa-bitcoin"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Login"><i class="fa fa-buysellads"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Sign Up"><i class="fa fa-chrome"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="wrapper row1" style="background-color: #8e9aaf">
-        <header id="header" class="hoc clear">
-            <section>
+            <div id="header" class="hoc clear">
                 <div class="first">
                     <i class="fa fa-dribbble"></i> +00 (123) 456 7890
                 </div>
-                <div>
-                    <h1 id="logo">
-                        <img src="references/logohospital.png" alt="" />
-                        <a href="index.html">ASKADIA</a>
-                    </h1>
-                </div>
-                <div class="address">
-                    <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
-                </div>
-            </section>
-        </header>
-    </div>
-    <div class="wrapper row2" style="background-color: #dee2ff; height: 90px">
-        <nav id="mainav" class="hoc clear">
-            <ul class="clear">
-                <li class="active"><a href="askadia.html">Главная страница</a></li>
+            </div>
+            <ul class="nospace">
                 <li>
-                    <a href="page.html">Личный кабинет</a>
+                    <a href="index.html" title="Home"><i class="fab fa-whatsapp"></i
+            ></a>
                 </li>
                 <li>
-                    <a href="services.html">Услуги</a>
+                    <a href="#" title="Send a Mail"><i class="fab fa-instagram"></i></a>
                 </li>
-                <li><a href="aboutus.html">О Компании</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li>
+                    <a href="#" title="Help Centre"><i class="fab fa-git"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Login"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Sign Up"><i class="fab fa-figma"></i></a>
+                </li>
             </ul>
-        </nav>
+            <div class="address">
+                <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
+            </div>
+        </div>
     </div>
+
+    <nav class="navbar navbar-expand-lg bg-color" id="myNavbar" style="background-color: #cbc0d3">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="references/logohospital.png" style="width: 20%" alt="" />ASKADIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>Menu
+        </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="page.html" class="nav-link">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
 
     <section id="about">
         <div class="container">
             <div class="col-md-8 col-md-offset-2">
                 <div class="heading">
-                    <h2>ABOUT <span>US</span></h2>
+                    <h2>Многопрофильный медицинский центр  <span>«Аskadia»</span></h2>
                     <div class="line"></div>
                     <p>
-                        <span><strong>L</strong></span
-              >orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad
-              minim veniam
+                        <span><strong>K</strong></span
+              >омплексное обследование, диагностика и лечение для всей семьи!
+«Аskadia» заботится о здоровье пациентов, доказывая своей ежедневной работой, что медицинская помощь должна быть профессиональной, комфортной, доступной.
+Прекрасное современное оснащение, опытные специалисты и уютная домашняя атмосфера ждут наших пациентов.
             </p>
           </div>
         </div>
@@ -92,21 +138,26 @@
                 data-wow-duration="1000ms"
                 data-wow-delay="300ms"
               >
-                <span>W</span>e Are Creative And Awesome
+                <span>K</span>линика открылась в 2017 году и работает по нескольким профильным заболеваниям.
                         </h3>
                         <p>
-                            <span><strong>L</strong></span
-                >orem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est
-                laborum.Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor.Lorem Ipsum is simply dummy text of
-                the printing and typesetting industry. book.
-              </p>
+                            <span><strong>M</strong></span
+                >
+                едицинский центр Askadia – это современное многопрофильное медучреждение. В наших стенах вы получите самый радушный прием и квалифицированную помощь опытных специалистов.
+Исключительное отношение к пациентам, щепетильность в исследованиях и неизменно качественное обслуживание – наши профессиональные приоритеты.
+
+Мы предлагаем:
+<br>
+- полную диагностику организма (Check-up);<br>
+- забор анализов, в том числе на дому;<br>
+- великолепные условия стационара (+ полнорационное питание);<br>
+- терапевтическое и хирургическое лечение по современным протоколам;<br>
+- малоинвазивные операции;<br>
+- суточное холтер-мониторирование;<br>
+- вызов детского врача на дом и пр.<br>
+Современная платная частная клиника Askadia оснащена новейшим диагностическим оборудованием. К вашим услугам безукоризненно вежливый персонал, доброжелательная атмосфера и внимательные врачи. Наши пациенты с первого момента и до выписки ощущают максимальный комфорт. Мы поддержим вас на всех этапах лечения, начиная со сбора пакета документов и до окончания вашей реабилитации.
+На платной основе в центре могут обследоваться, регулярно наблюдаться и получать необходимое лечение не только алматинцы, но и жители других регионов Республики Казахстан, а также граждане стран ближнего зарубежья. По запросу, осуществляем трансфер от места прибытия (аэропорт, железнодорожный вокзал) до медклиники.
+                </p>
             </div>
             <div
               class="col-md-6 ab-sec-img wow fadeInUp"
@@ -143,15 +194,15 @@
               <div class="info">
                 <div class="address">
                   <i class="fas fa-building"></i>
-                  <h4>Location:</h4>
+                  <h4>Адрес:</h4>
                   <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
                 </div>
                 <div class="open-hours">
                   <i class="fas fa-bible"></i>
-                  <h4>Open Hours:</h4>
+                  <h4>Режим работы:</h4>
                   <p>
-                    Monday-Saturday<br />
-                    8AM–11:30PM
+                    Понедельник-пятница<br />
+                    8:00-20:00
                   </p>
                 </div>
                 <div class="email">
@@ -161,7 +212,7 @@
                 </div>
                 <div class="phone">
                   <i class="fas fa-phone"></i>
-                  <h4>Call:</h4>
+                  <h4>Телефон:</h4>
                   <p>8 (727) 323 1010</p>
                 </div>
               </div>
@@ -227,6 +278,16 @@
       crossorigin="anonymous"
     ></script>
     <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+       <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
       crossorigin="anonymous"
