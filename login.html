@@ -1,168 +1,237 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url("fontawesome-free/css/fontawesome-all.min.css");
+@import url("framework.css");
+#topbar {
+    display: inline;
+    padding: 5px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
 
-<head>
-    <title>Login</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="stylesheet" href="login.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+#topbar * {
+    margin: 0;
+}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-</head>
+.nav-item a {
+    font-size: 14px;
+}
 
-<body>
-    <div class="wrapper row0" style="background-color: #f7f0f5">
-        <div id="topbar" class="hoc clear">
-            <ul class="nospace">
-                <li>
-                    <a href="index.html" title="Home"><i class="fa fa-android"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Send a Mail"><i class="fa fa-apple"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Help Centre"><i class="fa fa-bitcoin"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Login"><i class="fa fa-buysellads"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Sign Up"><i class="fa fa-chrome"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="wrapper row1" style="background-color: #8e9aaf">
-        <header id="header" class="hoc clear">
-            <section>
-                <div class="first">
-                    <i class="fa fa-dribbble"></i> +00 (123) 456 7890
-                </div>
-                <div>
-                    <h1 id="logo">
-                        <img src="references/logohospital.png" alt="" />
-                        <a href="index.html">ASKADIA</a>
-                    </h1>
-                </div>
-                <div class="address">
-                    <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
-                </div>
-            </section>
-        </header>
-    </div>
-    <div class="wrapper row2" style="background-color: #dee2ff; height: 90px">
-        <nav id="mainav" class="hoc clear">
-            <ul class="clear">
-                <li class="active"><a href="askadia.html">Главная страница</a></li>
-                <li>
-                    <a href="page.html">Личный кабинет</a>
-                </li>
-                <li>
-                    <a href="services.html">Услуги</a>
-                </li>
-                <li><a href="aboutus.html">О Компании</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="contact.html">Контакты</a></li>
-            </ul>
-        </nav>
-    </div>
+.nav-item a:hover {
+    color: #8E9AAF;
+    font-weight: bold;
+}
 
-    <form id="enter" style="max-width: 500px; margin: auto">
-        <h2>Логин</h2>
-        <div class="input-container">
-            <i class="fa fa-user icon"></i>
-            <input class="input-field" type="text" placeholder="Username" />
-        </div>
-        <h2>Email</h2>
-        <div class="input-container">
-            <i class="fa fa-envelope icon"></i>
-            <input class="input-field" type="text" placeholder="Email" />
-        </div>
-        <h2>Пароль</h2>
-        <div class="input-container">
-            <i class="fa fa-key icon"></i>
-            <input class="input-field" id="myInput" type="password" placeholder="Password" />
-        </div>
-        <input type="checkbox" onclick="myFunction()" /> Показать пароль
-        <br />
-        <br />
-        <button type="submit" class="btn_enter">Вход</button>
-    </form>
+.nav-link {
+    color: black;
+}
 
-    <footer>
-        <section class="contact mt-5">
-            <div class="container">
-                <div class="row mt-5">
-                    <div class="col-lg-4">
-                        <div class="info">
-                            <div class="address">
-                                <i class="fas fa-building"></i>
-                                <h4>Location:</h4>
-                                <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
-                            </div>
-                            <div class="open-hours">
-                                <i class="fas fa-bible"></i>
-                                <h4>Open Hours:</h4>
-                                <p>
-                                    Monday-Saturday<br /> 8AM–11:30PM
-                                </p>
-                            </div>
-                            <div class="email">
-                                <i class="fa-envelope-open" aria-hidden="true"></i>
-                                <h4>Email:</h4>
-                                <p>200103467@stu.sdu.edu.kz</p>
-                            </div>
-                            <div class="phone">
-                                <i class="fas fa-phone"></i>
-                                <h4>Call:</h4>
-                                <p>8 (727) 323 1010</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 mt-5 mt-lg-0">
-                        <form>
-                            <div class="form-row">
-                                <div class="col-md-6 form-group">
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" />
-                                </div>
-                                <div class="col-md-6 form-group">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" />
-                                </div>
-                            </div>
+#myNavbar a {
+    color: #8E9AAF;
+}
 
-                            <div class="form-group">
-                                <textarea class="form-control" name="message" rows="8" placeholder="Message"></textarea>
-                            </div>
-                            <div class="text-center">
-                                <button type="submit">Оставить отзыв</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div class="sub-footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div>
-                            <div class="text-center">
-                                <p>&copy; Copyright - Askadia. All rights reserved.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+#topbar ul li {
+    display: inline-block;
+    margin-right: 10px;
+    padding-right: 15px;
+    border-right: 1px solid black;
+    padding-top: 10px;
+}
 
-</html>
+#topbar ul li:last-child {
+    margin-right: 0;
+    padding-right: 0;
+    border-right: none;
+}
+
+#topbar i {
+    line-height: normal;
+}
+
+#header {
+    padding: 10px 0;
+}
+
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.address p {
+    text-align: left;
+    position: relative;
+    padding: auto;
+    font-size: 14px;
+    margin: 0;
+    padding-top: 10px;
+    justify-content: center;
+}
+
+#header .first {
+    justify-content: center;
+}
+
+nav ul,
+nav ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#topbar ul li {
+    border-color: rgba(255, 255, 255, .4);
+}
+
+#topbar ul li a {
+    color: #3A2E39;
+}
+
+#topbar li:first-child a,
+#topbar a:hover {
+    color: #3A2E39;
+}
+
+@media screen and (max-width: 978px) {
+    .hoc {
+        max-width: 90%;
+    }
+    #header {
+        padding: 30px 0;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    #header {
+        text-align: center;
+    }
+}
+
+*,
+*::before,
+*::after {
+    transition: all .3s ease-in-out;
+}
+
+a {
+    color: #FD8866;
+}
+
+a:active,
+a:focus {
+    background: transparent;
+}
+
+#enter {
+    padding: 50px 0 10px 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: grey;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid grey;
+}
+
+.btn_enter {
+    background-color: grey;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.btn_enter:hover {
+    opacity: 1;
+}
+
+.contact .info {
+    width: 100%;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: black;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #E8E6DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #000;
+}
+
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone {
+    margin-top: 25px;
+}
+
+.contact button {
+    background: #E8E6DF;
+    border: 2px solid #000;
+    padding: 10px 35px;
+    color: #000;
+    transition: 0.4s;
+    border-radius: 50px;
+}
+
+.contact button:hover {
+    background: #fff;
+    border: 2px solid #000;
+}
+
+.sub-footer {
+    margin-top: 30px;
+    background: #77878B;
+    border-top: 1px solid #000;
+    padding: 30px 0 10px;
+}
+
+footer .sub-footer p {
+    font-size: 14px;
+    text-align: center;
+    justify-content: center;
+}
