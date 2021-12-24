@@ -13,62 +13,93 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 </head>
 
+<script>
+    (function(d, w, q) {
+        w.QCHAT_ID = "AFMMTiH2B1e73R-RCVzkw";
+        w[q] =
+            w[q] ||
+            function() {
+                (w[q].q = w[q].q || []).push(arguments);
+            };
+        var l = function() {
+            var s = d.createElement("script");
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://quickley.chat/chat.js";
+            var x = d.getElementsByTagName("script")[0];
+            x.parentNode.insertBefore(s, x);
+        };
+        if (w.attachEvent) {
+            w.attachEvent("onload", l);
+        } else {
+            w.addEventListener("load", l, false);
+        }
+    })(document, window, "Quickley");
+</script>
+<!-- /Quickley.Chat -->
+
 <body>
     <div class="wrapper row0" style="background-color: #f7f0f5">
         <div id="topbar" class="hoc clear">
-            <ul class="nospace">
-                <li>
-                    <a href="index.html" title="Home"><i class="fa fa-android"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Send a Mail"><i class="fa fa-apple"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Help Centre"><i class="fa fa-bitcoin"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Login"><i class="fa fa-buysellads"></i></a>
-                </li>
-                <li>
-                    <a href="#" title="Sign Up"><i class="fa fa-chrome"></i></a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="wrapper row1" style="background-color: #8e9aaf">
-        <header id="header" class="hoc clear">
-            <section>
+            <div id="header" class="hoc clear">
                 <div class="first">
                     <i class="fa fa-dribbble"></i> +00 (123) 456 7890
                 </div>
-                <div>
-                    <h1 id="logo">
-                        <img src="references/logohospital.png" alt="" />
-                        <a href="index.html">ASKADIA</a>
-                    </h1>
-                </div>
-                <div class="address">
-                    <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
-                </div>
-            </section>
-        </header>
-    </div>
-    <div class="wrapper row2" style="background-color: #dee2ff; height: 90px">
-        <nav id="mainav" class="hoc clear">
-            <ul class="clear">
-                <li class="active"><a href="askadia.html">Главная страница</a></li>
+            </div>
+            <ul class="nospace">
                 <li>
-                    <a href="page.html">Личный кабинет</a>
+                    <a href="index.html" title="Home"><i class="fab fa-whatsapp"></i
+            ></a>
                 </li>
                 <li>
-                    <a href="services.html">Услуги</a>
+                    <a href="#" title="Send a Mail"><i class="fab fa-instagram"></i></a>
                 </li>
-                <li><a href="aboutus.html">О Компании</a></li>
-                <li><a href="#">Отзывы</a></li>
-                <li><a href="contact.html">Контакты</a></li>
+                <li>
+                    <a href="#" title="Help Centre"><i class="fab fa-git"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Login"><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="Sign Up"><i class="fab fa-figma"></i></a>
+                </li>
             </ul>
-        </nav>
+            <div class="address">
+                <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
+            </div>
+        </div>
     </div>
+
+    <nav class="navbar navbar-expand-lg bg-color" id="myNavbar" style="background-color: #cbc0d3">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img src="references/logohospital.png" style="width: 20%" alt="" />ASKADIA</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNav" aria-controls="myNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>Menu
+        </button>
+            <div class="collapse navbar-collapse" id="myNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Главная страница</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="page.html" class="nav-link">Личный кабинет</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="aboutus.html" class="nav-link">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <div class="booknow">
         <div class="inner_container">
@@ -77,72 +108,130 @@
                 В карте пациента Вы можете просмотреть или изменить личную информацию, узнать информацию, о ваших записях на прием и госпитализацию, а также услугах предоставленных вам.
             </p>
 
-            <button onclick="document.getElementById('id01').style.display='block'" style="width: auto">
-          Регистрация
-        </button>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Регестрация</button>
 
-            <div id="id01" class="modal">
-                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span
-          >
-          <form class="modal-content">
-            <div class="container">
-              <h1>Sign Up</h1>
-              <p>Please fill in this form to create an account.</p>
-              <hr />
-              <label for="email"><b>Email</b></label>
-              <input
-                type="text"
-                placeholder="Enter Email"
-                name="email"
-                required
-              />
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" >
+    <div class="container">
+      <h1>Регестрация</h1>
+      <p>Заполните форму чтобы создать аккаунт.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="mail" placeholder="Enter Email" name="email" required>
 
-              <label for="psw"><b>Password</b></label>
-              <input
-                type="password"
-                placeholder="Enter Password"
-                name="psw"
-                required
-              />
+      <label for="psw"><b>Пароль</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
 
-              <label for="psw-repeat"><b>Repeat Password</b></label>
-              <input
-                type="password"
-                placeholder="Repeat Password"
-                name="psw"
-                required
-              />
+      <label for="psw-repeat"><b>Повторите пароль</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
 
-              <label>
-                <input
-                  type="checkbox"
-                  checked="checked"
-                  name="remember"
-                  style="margin-bottom: 15px"
-                />
-                Remember me
-              </label>
+      <p>Создавая аккаунт вы соглашаетесь с условиями пользования <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
 
-              <p>
-                By creating an account you agree to our
-                <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
-              </p>
-
-              <div class="clearfix">
-                <button type="submit" class="signupbtn">Sign Up</button>
-                <button
-                  type="button"
-                  onclick="document.getElementById('id01').style.display='none'"
-                  class="cancelbtn"
-                >
-                  Cancel
-                </button>
-              </div>
-            </div>
-          </form>
-        </div>
+      <div class="clearfix">
+         <button type="submit" class="signupbtn">Зарегестрироваться</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="background-color:red">Закрыть</button>
       </div>
     </div>
+  </form>
+</div>
+
+
+
+      </div>
+    </div>
+
+  <style>
+input[type=mail], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=mail]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.container {
+  padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #474e5d;
+  padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 35px;
+  top: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+  color: #f44336;
+  cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+</style>
+<script>
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
     <footer>
       <section class="contact mt-5">
         <div class="container">
@@ -151,15 +240,15 @@
               <div class="info">
                 <div class="address">
                   <i class="fas fa-building"></i>
-                  <h4>Location:</h4>
+                  <h4>Адрес:</h4>
                   <p>г. Кызылорда, ул. Султан Бейбарыс, 70</p>
                 </div>
                 <div class="open-hours">
                   <i class="fas fa-bible"></i>
-                  <h4>Open Hours:</h4>
+                  <h4>Режим работы:</h4>
                   <p>
-                    Monday-Saturday<br />
-                    8AM–11:30PM
+                    Понедельник-Пятница<br />
+                    8:00-20:00
                   </p>
                 </div>
                 <div class="email">
@@ -169,7 +258,7 @@
                 </div>
                 <div class="phone">
                   <i class="fas fa-phone"></i>
-                  <h4>Call:</h4>
+                  <h4>Телефон:</h4>
                   <p>8 (727) 323 1010</p>
                 </div>
               </div>
@@ -245,5 +334,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="services.js"></script>
+    <script
+      src="https://kit.fontawesome.com/d752769066.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
