@@ -1,21 +1,41 @@
 @import url("fontawesome-free/css/fontawesome-all.min.css");
 @import url("framework.css");
 #topbar {
-    padding: 15px 0;
+    display: inline;
+    padding: 5px 0;
     text-transform: uppercase;
-    text-align: center;
     font-weight: 700;
+    display: flex;
+    justify-content: space-between;
 }
 
 #topbar * {
     margin: 0;
 }
 
+.nav-item a {
+    font-size: 14px;
+}
+
+.nav-item a:hover {
+    color: #8E9AAF;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: black;
+}
+
+#myNavbar a {
+    color: #8E9AAF;
+}
+
 #topbar ul li {
     display: inline-block;
     margin-right: 10px;
     padding-right: 15px;
-    border-right: 1px solid;
+    border-right: 1px solid black;
+    padding-top: 10px;
 }
 
 #topbar ul li:last-child {
@@ -29,28 +49,12 @@
 }
 
 #header {
-    padding: 25px 0;
-}
-
-#header section {
-    display: flex;
-    padding: 0;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
+    padding: 10px 0;
 }
 
 html {
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 14px;
-    line-height: 1.6em;
 }
 
 *,
@@ -59,40 +63,18 @@ body {
     box-sizing: border-box;
 }
 
-#header section>div {
-    display: table-cell;
-    width: 33.33333333333333%;
-    height: 100%;
-    vertical-align: middle;
-}
-
-#header section>div * {
+.address p {
+    text-align: left;
+    position: relative;
+    padding: auto;
+    font-size: 14px;
     margin: 0;
+    padding-top: 10px;
+    justify-content: center;
 }
 
-#header section>div:nth-child(2) {
-    text-align: center;
-}
-
-#header #logo {
-    font-size: 26px;
-    text-transform: uppercase;
-}
-
-#header #logo img {
-    width: 10%;
-    height: 20%;
-    display: inline-block;
-}
-
-#header .address p {
-    text-align: center;
-    display: absolute;
-    padding: 0;
-    margin: auto;
-    margin-top: 20px;
-    font-size: 16px;
-    left: 45px;
+#header .first {
+    justify-content: center;
 }
 
 nav ul,
@@ -100,38 +82,6 @@ nav ol {
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-#mainav,
-.sidebar nav {
-    line-height: normal;
-}
-
-#mainav ul {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#mainav li {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-    margin: 0 50px 0 0;
-    padding: 0;
-    font-size: 16px;
-    padding-top: 30px;
-    justify-content: center;
-}
-
-#mainav li a {
-    display: block;
-    padding: 20px 0;
-}
-
-#mainav form {
-    display: none;
-    margin: 0;
-    padding: 0;
 }
 
 #topbar ul li {
@@ -147,74 +97,18 @@ nav ol {
     color: #3A2E39;
 }
 
-#header #logo a {
-    color: inherit;
-}
-
-#mainav li a {
-    color: inherit;
-}
-
-#mainav .active a,
-#mainav a:hover,
-#mainav li:hover>a {
-    color: #6e5757;
-    background-color: inherit;
-    text-decoration: none;
-}
-
-@media screen and (max-width:978px) {
+@media screen and (max-width: 978px) {
     .hoc {
         max-width: 90%;
     }
     #header {
         padding: 30px 0;
     }
-    #header #logo {
-        margin-top: 3px;
-    }
-    #mainav {
-        padding: 15px;
-    }
-    #mainav ul {
-        display: block;
-    }
-    #mainav form {
-        display: block;
-    }
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width: 750px) {
     #header {
         text-align: center;
-    }
-    #header section>div form {
-        width: 100%;
-        max-width: 300px;
-        float: none;
-        margin: 0 auto;
-    }
-    #header section>div form input {
-        float: none;
-    }
-    #header #logo {
-        margin: 0 0 15px 0;
-    }
-}
-
-@media screen and (max-width:650px) {
-    #header section,
-    #header section>div {
-        display: block;
-        width: 100%;
-    }
-    #header section>div {
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-    #header section>div:nth-child(3) {
-        margin-bottom: 0;
     }
 }
 
@@ -233,22 +127,8 @@ a:focus {
     background: transparent;
 }
 
-#mainav form * {
-    transition: none !important;
-}
-
 .column {
     background-color: #E8E6DF;
-}
-
-.sec2 h1 {
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    align-items: center;
-    text-align: center;
-    margin: 37px 92px 20px 95px;
-    color: #000000;
 }
 
 #text {
@@ -387,6 +267,77 @@ a:focus {
     color: #000000;
 }
 
+
+.section-title{
+    text-align: center;
+     margin-bottom: 55px;
+      
+}
+.faq .faq-list{
+    padding: 0 100px;
+    margin-bottom: 10px;
+}
+.faq .faq-list ul{
+    padding: 0;
+    list-style: none;
+    padding-bottom: 50px;
+}
+.faq .faq-list li{
+    padding: 20px;
+    background: white;
+    border-radius: 4px;
+    position: relative;
+}
+.faq .faq-list a{
+    display: block;
+    position: relative;
+     font-size: 16px;
+     line-height: 24px;
+     font-weight: bold;
+     padding: 0 30px;
+     outline: none;
+}
+.faq .faq-list .icon-help{
+    font-size: 20px;
+     position: absolute;
+     right: 0;
+     left: 20px;
+     color: #272838;
+}
+.faq .faq-list .icon-show, .faq .faq-list .icon-close{
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.faq .faq-list p{
+    margin-bottom: 0;
+    padding: 10px 0 0 0;
+}
+.faq .faq-list .icon-show{
+    display: none;
+}
+.faq .faq-list a.collapsed{
+    color: #272838;
+}
+.faq .faq-list a.collapsed:hover{
+    color: #7E7F9A;
+}
+.faq .faq-list a.collapsed .icon-show{
+    display: none;
+}
+.faq .faq-list a.collapsed .icon-close{
+    display: none;
+}
+@media (max-width:1200px){
+    .faq .faq-list{
+        padding: 0;
+
+    }
+}
+
+
+
 .contact .info {
     width: 100%;
 }
@@ -440,7 +391,7 @@ a:focus {
 
 .sub-footer {
     margin-top: 30px;
-    background: #148DDF;
+    background: #77878B;
     border-top: 1px solid #000;
     padding: 30px 0 10px;
 }
@@ -449,4 +400,44 @@ footer .sub-footer p {
     font-size: 14px;
     text-align: center;
     justify-content: center;
+}
+
+.burger {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line {
+    width: 35px;
+    height: 4px;
+    background: black;
+    margin: 4px;
+}
+
+@media (min-width: 1250px) {
+    .burger {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    /*   .home {
+        margin-top: 500px;
+    }*/
+    div[class="wrapper row2"] {
+        background-color: none;
+    }
+    #address {
+        margin-top: 30px;
+    }
+    #mainav {
+        display: none;
+    }
+    .clear li {
+        position: initial;
+        width: 100%;
+        color: black;
+    }
 }
